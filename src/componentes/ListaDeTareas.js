@@ -26,7 +26,7 @@ function ListaDeTareas(){
 
     const completarTarea = id =>{
         const tareasActualizadas = tareas.map(tareas =>{
-            if(tareas.id == id){ 
+            if(tareas.id === id){ 
                 tareas.completada = !tareas.completada /*Si tareas.completada es True la vamos a poner en false y viceversa*/
             }
             return tareas;
